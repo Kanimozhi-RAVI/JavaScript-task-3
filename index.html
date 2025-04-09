@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sparticles@latest/dist/sparticles.min.js"></script>
+</head>
+<body>
+ 
+    <div class="calculator">
+      <div class="display">
+        <div id="result">0</div>
+      </div>
+      <div class="keys">
+        <button class="clear-but" data-function="clear">C</button>
+        <button class="operator" data-function="sin">sin</button>
+        <button class="operator" data-function="cos">cos</button>
+        <button class="operator" data-function="tan">tan</button>
+
+        <button class="clear-but" data-function="del">DEL</button>
+        <button class="operator" data-function="sqrt">√</button>
+        <button class="operator" data-function="power">x^</button>
+        <button class="operator" data-function="pi">π</button>
+
+        <button class="operator" data-function="ln">ln</button>
+        <button class="number" data-value="1">1</button>
+        <button class="number" data-value="2">2</button>
+        <button class="number" data-value="3">3</button>
+
+        <button class="operator" data-function="(">(</button>
+        <button class="number" data-value="4">4</button>
+        <button class="number" data-value="5">5</button>
+        <button class="number" data-value="6">6</button>
+
+        <button class="operator" data-function=")">)</button>
+        <button class="number" data-value="7">7</button>
+        <button class="number" data-value="8">8</button>
+        <button class="number" data-value="9">9</button>
+
+        <button class="operator" data-function="log">log</button>
+        <button class="arithmetic-operator" data-function="*">*</button>
+        <button class="arithmetic-operator" data-function="/">/</button>
+        <button class="arithmetic-operator" data-function="+">+</button>
+
+        <button class="number" data-value="0">0</button>
+        <button class="arithmetic-operator" data-value=".">.</button>
+        <button class="arithmetic-operator" data-function="-">-</button>
+        <button class="equal" data-function="=">=</button>
+      </div>
+    </div>
+   
+  
+<canvas id="sparticles-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
