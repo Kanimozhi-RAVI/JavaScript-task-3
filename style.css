@@ -2,15 +2,24 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
+	height: 97%;
 	overflow: hidden;
 	font-family: Arial, sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: #e6e6e6;
-	background-image: url('image/snow.png');
+	background-image: url('image/snow\ flakes.mp4');
   }
+ */
+  
+  canvas {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+  }
+  
   .calculator {
 	background-color: whitesmoke;
 	max-width: 450px;
@@ -105,5 +114,12 @@ html, body {
 	z-index: 1;
   }
   
-
+@media screen and (max-width:320px) {
+	.calculator{
+		max-width: 310px;
+	}
+	button{
+		width: 68px;
+	}
+}
 
